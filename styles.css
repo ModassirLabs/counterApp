@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url('image2.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.animated-heading {
+    font-size: 3em;
+    color: #00b894;
+    margin-bottom: 20px;
+    position:sticky;
+    animation: sparkle 1.5s infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00b894, 0 0 30px #00b894, 0 0 40px #00b894, 0 0 55px #00b894, 0 0 75px #00b894;
+    }
+    50% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 55px #ff00ff, 0 0 75px #ff00ff;
+    }
+}
+.container {
+    text-align: center;
+    background: #00b894;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 10px solid #ffffff;
+}
+
+.number-display {
+    font-size: 3em;
+    margin: 20px 0;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.button {
+    width: 100px; /* Fixed width for the button */
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#increment {
+    background-color: #28a745;
+}
+
+#decrement {
+    background-color: #dc3545;
+}
+
+#increment:hover {
+    background-color: #218838;
+}
+
+#decrement:hover {
+    background-color: #c82333;
+}
+
+#increment:active {
+    background-color: #1e7e34;
+}
+
+#decrement:active {
+    background-color: #bd2130;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 58%;
+    text-align: center;
+    position:absolute;
+    bottom: 0;    
+}
